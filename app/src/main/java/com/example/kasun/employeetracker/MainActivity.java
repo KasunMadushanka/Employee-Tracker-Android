@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, MapsActivity.class));
     }
 
+    public void gotoReports(View view) {
+        startActivity(new Intent(this, LocationReportsActivity.class));
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
