@@ -11,7 +11,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
+
+import java.io.IOException;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,15 +52,19 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton=(Button) findViewById(R.id.loginButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+       loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String username = usernameField.getText().toString();
                 String password = passwordField.getText().toString();
                 System.out.println("worked");
                 new LoginActivity().execute(username,password);
+
             }
         });
+
+        FirebaseMessaging.getInstance().subscribeToTopic("test");
+        FirebaseInstanceId.getInstance().getToken();
     }
 
      public void sendMessage(View view) {

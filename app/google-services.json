@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "507903091620",
+    "firebase_url": "https://employee-tracker-172404.firebaseio.com",
+    "project_id": "employee-tracker-172404",
+    "storage_bucket": "employee-tracker-172404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507903091620:android:6a92489eced1f666",
+        "android_client_info": {
+          "package_name": "com.example.kasun.employeetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507903091620-dhuckr63ufaet3fbcf7le1qmb1rf7uci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKyQOQSPDMSnAfbq_JSC93KufgpvDTub8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
