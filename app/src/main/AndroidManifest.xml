@@ -36,17 +36,14 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".FirebaseMessagingService">
+        <service android:name=".FirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
-        <service
-            android:name=".FirebaseInstanceIDService">
+        <service android:name=".FirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
@@ -69,8 +66,10 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".LocationReportsActivity" />
-
-
+        <activity
+            android:name=".EmployeeProfile"
+            android:label="@string/title_activity_employee_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

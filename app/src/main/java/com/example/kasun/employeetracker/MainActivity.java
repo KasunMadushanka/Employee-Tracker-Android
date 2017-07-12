@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoReports(View view) {
-        startActivity(new Intent(this, LocationReportsActivity.class));
+        startActivity(new Intent(this, EmployeeProfile.class));
     }
 
     @Override
