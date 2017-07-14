@@ -65,11 +65,17 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".LocationReportsActivity" />
+        <activity android:name=".LocationReports" />
         <activity
             android:name=".EmployeeProfile"
             android:label="@string/title_activity_employee_profile"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LeaveRequest" />
+        <activity android:name=".LocationReport" />
+        <activity android:name=".OTRequest" />
+        <activity android:name=".ScheduleMeeting" />
+        <activity android:name=".Home" />
+        <activity android:name=".AttendanceReport"></activity>
     </application>
 
 </manifest>

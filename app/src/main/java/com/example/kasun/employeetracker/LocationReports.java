@@ -18,7 +18,7 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
 
-public class LocationReportsActivity extends AppCompatActivity {
+public class LocationReports extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

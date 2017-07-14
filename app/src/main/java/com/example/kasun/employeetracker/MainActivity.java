@@ -11,17 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
-
-import java.io.IOException;
-
-import okhttp3.FormBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,27 +45,30 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton=(Button) findViewById(R.id.loginButton);
 
-       loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String username = usernameField.getText().toString();
-                String password = passwordField.getText().toString();
-                System.out.println("worked");
-                new LoginActivity().execute(username,password);
-
-            }
-        });
-
         FirebaseMessaging.getInstance().subscribeToTopic("test");
         FirebaseInstanceId.getInstance().getToken();
     }
 
-     public void sendMessage(View view) {
-        startActivity(new Intent(this, MapsActivity.class));
-    }
+    public void login(View view) {
 
-    public void gotoReports(View view) {
-        startActivity(new Intent(this, EmployeeProfile.class));
+        String username = usernameField.getText().toString();
+        String password = passwordField.getText().toString();
+
+        try {
+            String response=new LoginActivity().execute(username,password).get();
+
+            if(response.equals("1")){
+                startActivity(new Intent(this, Home.class));
+            }else if(response.equals("0")){
+                Toast.makeText(null, "Invalid username or password!",Toast.LENGTH_LONG).show();
+            }else{
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
     @Override
