@@ -7,7 +7,7 @@
     tools:context="com.example.kasun.employeetracker.EmployeeProfile">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView1"
         android:layout_width="336dp"
         android:layout_height="116dp"
         app:srcCompat="@drawable/profile"
@@ -20,11 +20,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
         app:layout_constraintVertical_bias="0.222" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView1"
         android:layout_width="297dp"
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
@@ -32,7 +32,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
         android:text="       Kasun Madushanka"
         android:textSize="25sp"
         app:layout_constraintHorizontal_bias="0.507"
@@ -55,7 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView1"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
@@ -70,13 +69,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.52"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Name" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -181,8 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="No of Leaves" />
-
+                    android:text="No. of Leaves" />
 
             </LinearLayout>
 
@@ -195,109 +186,109 @@
                 tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/name"
+                    android:id="@+id/textView17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/employee_id"
+                    android:id="@+id/textView18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/designation"
+                    android:id="@+id/textView19"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/department"
+                    android:id="@+id/textView20"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/cluster"
+                    android:id="@+id/textView21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/age"
+                    android:id="@+id/textView22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/gender"
+                    android:id="@+id/textView23"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/marital_status"
+                    android:id="@+id/textView24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/contact_no"
+                    android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/address"
+                    android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/edu_background"
+                    android:id="@+id/textView27"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/past_emp"
+                    android:id="@+id/textView28"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/awards"
+                    android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/promotions"
+                    android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/leaves"
+                    android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:layout_marginTop="10dp"/>
 
             </LinearLayout>
 
