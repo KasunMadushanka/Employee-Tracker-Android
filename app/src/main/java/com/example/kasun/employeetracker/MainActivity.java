@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseMessaging.getInstance().subscribeToTopic("test");
         FirebaseInstanceId.getInstance().getToken();
+
+        startService(new Intent(this, LocationService.class));
     }
 
     public void login(View view) {
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             if(response.equals("1")){
                 startActivity(new Intent(this, Home.class));
             }else if(response.equals("0")){
-                Toast.makeText(null, "Invalid username or password!",Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Invalid Username or Password!", Toast.LENGTH_SHORT).show();
             }else{
 
             }
